@@ -1,15 +1,15 @@
 /******************************************************************* 
 * Name:
-*	simple_dual_port_ram_single_clock.v
+*	read_pointer.v
 * Description:
-* 	This module is a parameterized RAM blocks
-*  data: Parallel input data 
+* 	This module is read pointer for the read address
+*  pop: Pop input signal
 *	read_addr: Read Address input 
-*  write_addr: Write Address input
-*  we: Write Enable input line
+*  reset: Reset input signal
 *	clk: Input Clock signal
+*	empty: Empty flag input
 * Outputs:
-* 	q: Output parallel data
+* 	read_addr: Read address pointer
 * Versión:  
 *	1.0
 * Author: 

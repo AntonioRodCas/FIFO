@@ -1,15 +1,18 @@
 /******************************************************************* 
 * Name:
-*	write_pointer.v
+*	FIFO.v
 * Description:
-* 	This module is write pointer register for the FIFO
+* 	This module is a parameterizable FIFO
 * Inputs:
-*	push: Push signal  
+*	DataInput: Input Data bus 
 *  reset: Reset input line
 *	clk: Input Clock signal
-*  full
+*  push: Push input signal
+*	pop: Pop input signal
 * Outputs:
-* 	q: Output parallel data
+* 	DataOutput: Output Data bus
+*	full: FIFO full flag indicator
+*	empty: FIFO empty flag indicator
 * Versión:  
 *	1.0
 * Author: 

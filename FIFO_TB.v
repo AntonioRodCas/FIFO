@@ -120,18 +120,18 @@ end
 /*----------------------------------------------------------------------------------------*/ 
 initial begin
 	# 0  DataInput = 1'b0;
-	# 8  DataInput = 8;
-	# 4  DataInput = 7;
-	# 4  DataInput = 6;
+	# 8  DataInput = 16;
 	# 4  DataInput = 5;
-	# 4  DataInput = 0;
 	# 4  DataInput = 4;
-	# 4  DataInput = 0;
 	# 4  DataInput = 3;
 	# 4  DataInput = 0;
 	# 4  DataInput = 2;
 	# 4  DataInput = 0;
 	# 4  DataInput = 1;
+	# 4  DataInput = 0;
+	# 4  DataInput = 2;
+	# 4  DataInput = 0;
+	# 4  DataInput = 3;
 	
 	# 128  DataInput = 1;
 	# 4  DataInput = 3;

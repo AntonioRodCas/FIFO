@@ -7,9 +7,9 @@
 *	push: Push signal  
 *  reset: Reset input line
 *	clk: Input Clock signal
-*  full
+*  full: Full flag input
 * Outputs:
-* 	q: Output parallel data
+* 	write_addr: Write Address pointer
 * Versión:  
 *	1.0
 * Author: 
@@ -45,24 +45,7 @@ always@(posedge clk or negedge reset) begin
 
 end
 
-/*
 
-always@(posedge clk or negedge reset) begin
-	if(reset == 1'b0) 											//reset
-		write_addr <= 0;
-	else if (push) begin										//push 
-			if (full == 0)
-				if(write_addr == (MEM_DEPTH-1))
-					write_addr <= 0;
-				else
-					write_addr <= write_addr + 1;
-			else
-				write_addr <= write_addr;
-		end
-
-end
-
-*/
 
 //----------------------------------------------------------
    
