@@ -1,0 +1,34 @@
+/******************************************************************* 
+* Name:
+*	simple_dual_port_ram_single_clock.v
+* Description:
+* 	This module is a parameterized RAM blocks
+*  data: Parallel input data 
+*	read_addr: Read Address input 
+*  write_addr: Write Address input
+*  we: Write Enable input line
+*	clk: Input Clock signal
+* Outputs:
+* 	q: Output parallel data
+* Versión:  
+*	1.0
+* Author: 
+*	José Antonio Rodríguez Castañeda  md193781
+* Date :
+*	V1.0       01/11/2018
+* 
+*********************************************************************/
+module write_pointer
+#
+(parameter DATA_WIDTH=8, parameter MEM_DEPTH=4)
+(
+	input [(DATA_WIDTH-1):0] data,
+	input [(ADDR_WIDTH-1):0] read_addr, 
+	input [(ADDR_WIDTH-1):0]	write_addr,
+	input we, 
+	input clk,
+	
+	output reg [(DATA_WIDTH-1):0] q
+);
+
+endmodule
